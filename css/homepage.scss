@@ -694,14 +694,19 @@ header {
 
     .email {
         width: 214px;
-        font-family: $main-font;
-        font-size: 16px;
-        line-height: 22px;
         display: flex;
         align-items: center;
-        color: $background-color;
         padding-left: 20px;
         padding-right: 12px;
+
+        input {
+            border: none;
+            outline: none;
+            font-family: $main-font;
+            font-size: 16px;
+            line-height: 22px;
+            color: $background-color;
+        }
     }
 
     button {
@@ -828,14 +833,19 @@ footer {
 
         .email {
             width: 241px;
-            font-family: $main-font;
-            font-size: 16px;
-            line-height: 22px;
             display: flex;
             align-items: center;
-            color: $background-color;
             padding-left: 20px;
             padding-right: 12px;
+
+            input {
+                border: none;
+                outline: none;
+                font-family: $main-font;
+                font-size: 16px;
+                line-height: 22px;
+                color: $background-color;
+            }
         }
 
         button {

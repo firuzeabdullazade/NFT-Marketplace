@@ -1340,9 +1340,15 @@ footer .subscribe button {
     font-size: 22px;
     line-height: 35px;
   }
+  footer .footer-info .subscribe {
+    width: 315px;
+  }
   footer .footer-info .subscribe h5 {
     font-size: 22px;
     line-height: 35px;
+  }
+  footer .footer-info .subscribe .subscribe-form-info .info {
+    padding: 0;
   }
   footer .footer-info .subscribe .subscribe-form-info .subscribe-form {
     display: flex;
@@ -1353,7 +1359,7 @@ footer .subscribe button {
   }
   footer .footer-info .subscribe .subscribe-form-info .subscribe-form .email {
     padding: 0;
-    width: 100%;
+    width: 315px;
   }
   footer .footer-info .subscribe .subscribe-form-info .subscribe-form .email input {
     width: 100%;

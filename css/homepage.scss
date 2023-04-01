@@ -1596,6 +1596,7 @@ footer {
             }
 
             .subscribe {
+                width: 315px;
 
                 h5 {
                     font-size: 22px;
@@ -1603,6 +1604,10 @@ footer {
                 }
 
                 .subscribe-form-info {
+
+                    .info {
+                        padding: 0;
+                    }
 
                     .subscribe-form {
                         display: flex;
@@ -1613,7 +1618,7 @@ footer {
 
                         .email {
                             padding: 0;
-                            width: 100%;
+                            width: 315px;
 
                             input {
                                 width: 100%;

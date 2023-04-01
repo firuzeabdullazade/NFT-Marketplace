@@ -24,6 +24,10 @@ header {
         flex-direction: row;
         justify-content: space-between;
         padding: 20px 50px;
+
+        .burger-menu {
+            display: none;
+        }
     }
 
     .nav-menu {
@@ -65,7 +69,9 @@ header {
 }
 
 .header {
-    padding: 80px 115px;
+    padding: 80px 0px;
+    display: flex;
+    flex-direction: column;
     color: $text-color;
     border-bottom: 1px solid $secondary-background-color;
 
@@ -147,7 +153,7 @@ header {
     .head {
         display: flex;
         flex-direction: row;
-        padding: 10px 115px 0px 115px;
+        padding: 10px 115px 0px;
 
         .tab-1 {
             border-bottom: 2px solid #858584;
@@ -227,10 +233,15 @@ header {
         flex-direction: row;
         align-items: flex-start;
         padding: 0px;
-        gap: 30px;   
+        gap: 30px;
     }
 
-    .NFT-card {
+    .NFT-card,
+    .NFT-card-mobile-1,
+    .NFT-card-mobile-2,
+    .NFT-card-mobile-3,
+    .NFT-card-mobile-4,
+    .NFT-card-mobile-5 {
         display: flex;
         flex-direction: column;
 
@@ -456,5 +467,216 @@ footer {
         font-size: 12px;
         line-height: 13px;
         color: #CCCCCC;
+    }
+}
+
+@media (max-width: 375px) {
+
+    header {
+
+        .navigation {
+            height: 54px;
+            padding: 15px 30px;
+
+            img {
+                width: 182.56px;
+                height: 24px;
+            }
+
+            .nav-menu {
+                display: none;
+            }
+
+            .burger-menu {
+                display: block;
+                background-color: transparent;
+                border: none;
+
+                img {
+                    width: 24px;
+                }
+            }
+        }
+    }
+
+    .header {
+        padding: 40px 30px;
+
+        .headline-subhead {
+
+            .headline {
+
+                h2 {
+                    font-size: 28px;
+                    line-height: 39px;
+                }
+
+                .subhead {
+                    font-size: 16px;
+                    line-height: 22px;
+                }
+            }
+
+            .table-header {
+                width: 100%;
+
+                .table-subheader {
+                    width: 100%;
+                    height: 24px;
+
+                    input {
+                        width: 230px;
+                        height: 22px;
+                    }
+                }
+            }
+        }
+    }
+
+    .marketplace-section {
+
+        .head {
+            padding: 10px 30px 0px;
+
+            .tabs {
+                width: 100%;
+
+                .tab-1,
+                .tab-2 {
+                    width: 100%;
+                }
+
+                .number-1,
+                .number-2 {
+                    display: none;
+                }
+
+                button {
+
+                    h5 {
+                        font-size: 16px;
+                        line-height: 22px;
+                    }
+                }
+
+                .tab-1 {
+                    padding: 0px 60px;
+                }
+
+                .tab-2 {
+                    padding: 0px 34px;
+                }
+            }
+        }
+        
+        .NFT-cards-section {
+            padding: 40px 30px;
+
+            .NFT-card-rows {
+                display: flex;
+                flex-direction: column;
+                
+                .NFT-card {
+                    display: none;
+                }
+
+                .NFT-card-mobile-2{
+
+                    order: 1;
+                }
+            }
+        }
+    }
+
+    footer {
+        padding: 40px 30px;
+
+        .footer-info {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+
+            .NFT-marketplace-info {
+                align-items: flex-start;
+                gap: 20px;
+
+                img {
+                    width: 243.41px;
+                    height: 32px;
+                }
+
+                .additional-info {
+                    font-size: 16px;
+                    line-height: 22px;
+
+                    .icons {
+
+                        button {
+
+                            img {
+                                width: 32px;
+                                height: 32px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .explore {
+                gap: 20px;
+
+                h5 {
+                    font-size: 22px;
+                    line-height: 35px;
+                }
+            }
+
+            .subscribe {
+
+                width: 315px;
+
+                h5 {
+                    font-size: 22px;
+                    line-height: 35px;
+                }
+
+                .subscribe-form-info {
+
+                    .info{
+                        padding: 0;
+                    }
+
+                    .subscribe-form {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 16px;
+                        background-color: transparent;
+                        height: 108px;
+
+                        .email {
+                            padding: 0;
+                            width: 315px;
+
+                            input {
+                                width: 100%;
+                                height: 46px;
+                                border-radius: 20px;
+                                display: flex;
+                                flex-direction: row;
+                                align-items: center;
+                                padding: 16px 20px;
+                                gap: 12px;
+                            }
+                        }
+
+                        button {
+                            width: 315px;
+                            height: 46px;
+                            justify-content: center;
+                        }
+                    }
+                }
+            }
+        }
     }
 }

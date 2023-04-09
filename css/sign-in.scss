@@ -113,7 +113,9 @@ header {
             gap: 15px;
         }
 
-        .typeform {
+        .username,
+        .email,
+        .password {
             width: 330px;
             height: 46px;
             background-color: white;
@@ -383,7 +385,7 @@ footer {
                 }
 
                 button {
-                    width: 315px;
+                    width: 100%;
                 }
             }
 

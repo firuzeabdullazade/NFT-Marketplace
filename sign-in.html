@@ -14,124 +14,129 @@
     <link rel="stylesheet" href="./css/sign-in.css">
     <link rel="icon" href="./assests/Storefront.svg">
 </head>
+
 <body>
-    <header>
-        <div class="navigation">
-            <img src="./assests/logo.svg" alt="nav/logo">
-            <div class="nav-menu">
-                <a href="marketplace.html" class="link">Marketplace</a>
-                <a href="#" class="link">Rankings</a>
-                <a href="#" class="link">Connect a wallet</a>
-                <button>
-                    <img src="./assests/User.svg" alt="user/logo">
-                    <a href="create-account.html" class="link">Sign Up</a>
+    <form>
+        <header>
+            <div class="navigation">
+                <img src="./assests/logo.svg" alt="nav/logo">
+                <div class="nav-menu">
+                    <a href="marketplace.html" class="link">Marketplace</a>
+                    <a href="#" class="link">Rankings</a>
+                    <a href="#" class="link">Connect a wallet</a>
+                    <button>
+                        <img src="./assests/User.svg" alt="user/logo">
+                        <a href="create-account.html" class="link">Sign Up</a>
+                    </button>
+                </div>
+                <button class="burger-menu">
+                    <img src="./assests/Burger Menu.svg" alt="burger menu">
                 </button>
             </div>
-            <button class="burger-menu">
-                <img src="./assests/Burger Menu.svg" alt="burger menu">
-            </button>
-        </div>
-    </header>
-    <section class="sign-in-section">
-        <picture>
-            <source srcset="./assests/Image Placeholder (26).png" media="(max-width: 375px)">
-            <img src="./assests/Image Placeholder (4).png" alt="image">
-        </picture>
-        <div class="sign-in-form">
-            <div class="headline-subhead">
-                <h2>
-                    Sign In 
-                </h2>
-                <div class="subhead">
-                    Welcome back! Enter your details and continue creating, collecting and selling NFTs.
-                </div>
-            </div>
-            <div class="form">
-                <div class="typeforms">
-                    <div class="typeform">
-                        <img src="./assests/User (1).svg" alt="user">
-                        <input type="text" placeholder="Username">
-                    </div>
-                    <div class="typeform">
-                        <img src="./assests/EnvelopeSimple (1).svg" alt="envelope">
-                        <input type="email" placeholder="Email Address">
-                    </div>
-                    <div class="typeform">
-                        <img src="./assests/LockKey.svg" alt="lock key">
-                        <input type="password" placeholder="Password">
+        </header>
+        <section class="sign-in-section">
+            <picture>
+                <source srcset="./assests/image-sign-in.png" media="(max-width: 375px)">
+                <img src="./assests/Image Placeholder (4).png" alt="image">
+            </picture>
+            <div class="sign-in-form">
+                <div class="headline-subhead">
+                    <h2>
+                        Sign In
+                    </h2>
+                    <div class="subhead">
+                        Welcome back! Enter your details and continue creating, collecting and selling NFTs.
                     </div>
                 </div>
-                <button>
-                    <a href="artist-page.html" class="link">Sign In</a>
-                </button>
-            </div>
-            <div class="sign-up">
-                Don't have an ccount?
-                <a href="create-account.html" class="sign-up-link">Sign Up</a>
-            </div>
-        </div>
-    </section>
-    <footer>
-        <div class="footer-info">
-            <div class="NFT-marketplace-info">
-                <img src="./assests/logo.svg" alt="logo">
-                <div class="additional-info">
-                    <div class="subinfo">
-                        NFT marketplace UI created with Anima for Figma.
-                    </div>
-                    <div class="community-info">
-                        Join our community
-                        <div class="icons">
-                            <button>
-                                <img src="./assests/DiscordLogo.svg" alt="Discord logo">
-                            </button>
-                            <button>
-                                <img src="./assests/YoutubeLogo.svg" alt="Youtube logo">
-                            </button>
-                            <button>
-                                <img src="./assests/TwitterLogo.svg" alt="Twitter logo">
-                            </button>
-                            <button>
-                                <img src="./assests/InstagramLogo.svg" alt="Instagram logo">
-                            </button>
+                <div class="form">
+                    <div class="typeforms">
+                        <div class="username">
+                            <img src="./assests/User (1).svg" alt="user">
+                            <input id="username" type="text" placeholder="Username">
                         </div>
-                    </div>
-                </div>
-            </div>
-            <div class="explore">
-                <h5>
-                    Explore
-                </h5>
-                <div class="pages">
-                    <a href="marketplace.html" class="nav-link">Marketplace</a>
-                    <a href="#" class="nav-link">Rankings</a>
-                    <a href="#" class="nav-link">Connect a wallet</a>
-                </div>
-            </div>
-            <div class="subscribe">
-                <h5>
-                    Join Our Weekly Digest
-                </h5>
-                <div class="subscribe-form-info">
-                    <div class="info">
-                        Get exclusive promotions & updates straight to your inbox.
-                    </div>
-                    <div class="subscribe-form">
                         <div class="email">
-                            <input type="email" placeholder="Enter your email here">
+                            <img src="./assests/EnvelopeSimple (1).svg" alt="envelope">
+                            <input id="email" type="text" placeholder="Email Address">
                         </div>
-                        <button>
-                            Subscribe
-                        </button>
+                        <div class="password">
+                            <img src="./assests/LockKey.svg" alt="lock key">
+                            <input id="password" type="password" placeholder="Password">
+                            <p id="passwordError"></p>
+                        </div>
+                    </div>
+                    <button id="submit" type="submit">
+                        Sign In
+                    </button>
+                </div>
+                <div class="sign-up">
+                    Don't have an ccount?
+                    <a href="create-account.html" class="sign-up-link">Sign Up</a>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="footer-info">
+                <div class="NFT-marketplace-info">
+                    <img src="./assests/logo.svg" alt="logo">
+                    <div class="additional-info">
+                        <div class="subinfo">
+                            NFT marketplace UI created with Anima for Figma.
+                        </div>
+                        <div class="community-info">
+                            Join our community
+                            <div class="icons">
+                                <button>
+                                    <img src="./assests/DiscordLogo.svg" alt="Discord logo">
+                                </button>
+                                <button>
+                                    <img src="./assests/YoutubeLogo.svg" alt="Youtube logo">
+                                </button>
+                                <button>
+                                    <img src="./assests/TwitterLogo.svg" alt="Twitter logo">
+                                </button>
+                                <button>
+                                    <img src="./assests/InstagramLogo.svg" alt="Instagram logo">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="explore">
+                    <h5>
+                        Explore
+                    </h5>
+                    <div class="pages">
+                        <a href="marketplace.html" class="nav-link">Marketplace</a>
+                        <a href="#" class="nav-link">Rankings</a>
+                        <a href="#" class="nav-link">Connect a wallet</a>
+                    </div>
+                </div>
+                <div class="subscribe">
+                    <h5>
+                        Join Our Weekly Digest
+                    </h5>
+                    <div class="subscribe-form-info">
+                        <div class="info">
+                            Get exclusive promotions & updates straight to your inbox.
+                        </div>
+                        <div class="subscribe-form">
+                            <div class="email">
+                                <input type="email" placeholder="Enter your email here">
+                            </div>
+                            <button type="submit">
+                                Subscribe
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="frame">
-            <div class="divider"></div>
-            <div class="end">
-                Ⓒ NFT Market. Use this template freely.
+            <div class="frame">
+                <div class="divider"></div>
+                <div class="end">
+                    Ⓒ NFT Market. Use this template freely.
+                </div>
             </div>
-        </div>
-    </footer>
+        </footer>
+    </form>
+    <script src="./main.js"></script>
 </body>
